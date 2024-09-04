@@ -5,7 +5,7 @@ on:
       - main
       - dev
     env:
-      MONGODB_DB_NAME: gha-demo #name of env : variable name (user defined and global)
+      MONGODB_DB_NAME: gha-demo #name of env : variable name (user defined and global)test
 jobs:
   test:  
     env:
