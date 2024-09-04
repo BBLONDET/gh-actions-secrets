@@ -7,7 +7,8 @@ on:
 env:
   MONGODB_DB_NAME: gha-demo #name of env : variable name (user defined and global)test
 jobs:
-  test:  
+  test:
+    environment: testing  #uses github environments settings in repo
     env:
       MONGODB_CLUSTER_ADDRESS: cluster0.90c44.mongodb.net
       MONGODB_USERNAME: ${{ secrets.MONGODB_USERNAME }}
